@@ -113,7 +113,7 @@ class ParallelCoordinatesD3 {
 
     const fgMerged = fgEnter.merge(fg);
     
-    // ========== FIXED: Store selectedIdSet reference before using in callbacks ==========
+    
     const selectedIdSet_ref = this.selectedIdSet;
     
     fgMerged
@@ -149,7 +149,7 @@ class ParallelCoordinatesD3 {
           .attr('stroke-opacity', 1)
           .raise();
       })
-      // ========== FIXED: Use arrow function to preserve 'this' context ==========
+     
       .on('mouseout', (event, d) => {
         const isSelected = this.selectedIdSet.has(d.id);
         const hasSel = this.selectedIdSet.size > 0;
@@ -184,7 +184,7 @@ class ParallelCoordinatesD3 {
             : UNSELECTED_OPACITY
           : BASE_OPACITY;
       })
-      // ========== FIXED: Use captured reference instead of 'this' ==========
+     
       .each(function(d) {
         if (selectedIdSet_ref.has(d.id)) {
           d3.select(this).raise();
@@ -235,7 +235,6 @@ class ParallelCoordinatesD3 {
   }
 
   brushEvent(dim, event) {
-    // Clear manual selections when brushing
     this.manuallySelectedIds.clear();
     
     if (!event.selection) {
