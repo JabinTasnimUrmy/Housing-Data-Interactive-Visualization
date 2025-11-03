@@ -161,7 +161,7 @@ Additional binary attributes: mainroad, guestroom, basement, hotwaterheating, ai
 
 ### Scatterplot
 - **X-axis**: Area (sq ft)
-- **Y-axis**: Price (₹)
+- **Y-axis**: Price (Unit)
 - **Color**: Red (#B91C1C) = selected, Light blue (#93c5fd) = unselected
 - **Opacity**: 0.90 (selected), 0.07 (unselected), 0.28 (base)
 - **Stroke Width**: 2.6px (selected), 1.15px (base)
