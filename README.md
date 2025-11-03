@@ -81,40 +81,7 @@ npm start
 
 The application will open at `http://localhost:3000`
 
----
 
-## 📁 Project Structure
-
-```
-HOUSING-DATA-INTERACTIVE-VISUALIZATION/
-├── node_modules/
-├── public/
-│   ├── Housing.csv           # Dataset (545 housing records)
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   └── scatterplot/
-│   │       ├── Scatterplot.css
-│   │       └── ScatterPlotContainer.js
-│   ├── templates/
-│   │   └── d3react/
-│   │       ├── App.css
-│   │       ├── App.js                   # Main application container
-│   │       ├── ParallelCoordinates.css
-│   │       ├── ParallelCoordinates.js   # React wrapper
-│   │       ├── ParallelCoordinatesD3.js # D3 visualization class
-│   │       ├── ScatterPlot.js           # React wrapper
-│   │       └── ScatterPlotD3.js         # D3 visualization class
-│   ├── utils/
-│   │   └── helper.js
-│   ├── index.css
-│   └── index.js
-├── package.json
-├── package-lock.json
-├── Report.pdf                 # Design justification report
-└── README.md
-
-```
 
 ---
 
